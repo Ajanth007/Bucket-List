@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 10px;
+    background-image: url("https://i.pinimg.com/736x/00/45/56/0045562ccf337b77b5fe5464b5dbffe0.jpg");
+
+}
+
+.TodoApp{
+    /* text-align: center; */text-align: center;
+    /* background-color: blue;
+    width: 100%;
+    padding:25% auto 25%;
+     */
+     width: 100%;
+     max-width: 540px;
+     background:white;
+     margin: 50px auto 20px;
+     padding: 40px 30px 70px;
+     border-radius: 10px;
+}
+
+.TodoApp h2{
+    display: flex;
+    /* flex: 1; */
+    align-items: center;
+    margin-bottom:  20px; 
+}
+
+.TodoApp h2 img{
+    width: 50px;
+    margin-left: 10px;
+    display: flex;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(82, 76, 76, 0.736);
+
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.row input{
+    outline: none;
+    border: none;
+    display: flex;
+    color: white;
+    flex: 1;
+    /* opacity: 25%; */background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+
+}
+
+.row button{
+    border: none;
+    margin: none;
+    border-radius: 50px;
+    /* padding: 16px 50px; */
+    padding: 12px 40px;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+.row button:hover {
+    background-color: #333;
+}
+
+
+ul li{
+    list-style: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 17px;
+    padding: 10px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    text-align: left;
+    position: relative;
+    margin-bottom: 2px;
+    background-color: rgba(82, 76, 76, 0.736);
+    color: white;
+}
+
+/* ul li::before{
+    content: ''; 
+    position: absolute;  
+    height: 28px; 
+     width: 29px; 
+     border-radius: 50%;
+    background-image: url(./Pictures/circle.jpg); 
+    background-size: cover; 
+    background 
+    top : 12px;
+    bottom: 12px;
+    
+} */
+
+ul li.checked{
+    color:#555 ;
+    text-decoration: line-through ;
+    color: white;
+
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 1px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    background-image: url(Pictures/x.jpg);
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: black;
+}
+
+ul li span:hover{
+    background: black;
+    color: white;
+}
+
+input::placeholder {
+    color: white; 
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Poppins',sans-serif;
+  }
+  
